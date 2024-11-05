@@ -7,7 +7,6 @@ const Weather = () => {
         <main>
             <section className='weather-section'>
                 <div className="weather-wrapper">
-                    <Search />
                     <Hero/>
                 </div>
 
