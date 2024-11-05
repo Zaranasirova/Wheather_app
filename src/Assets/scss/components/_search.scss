@@ -1,0 +1,23 @@
+.search-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    input{
+        height: 50px;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        padding: 25px;
+        color: #626262;
+        background-color: #ebfffc;
+        font-size: 18px;
+    }
+    img{
+        width: 50px;
+        padding: 15px;
+        border-radius: 50%;
+        background-color: #ebfffc;
+        cursor: pointer;
+       
+    }
+}
