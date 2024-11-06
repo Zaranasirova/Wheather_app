@@ -17,6 +17,9 @@
         @media(max-width:340px){
             padding: 10px;
         }
+        @media(max-width:320px){
+            padding: 2px;
+        }
     }
     img{
         width: 50px;
@@ -24,6 +27,13 @@
         border-radius: 50%;
         background-color: #ebfffc;
         cursor: pointer;
-       
+        @media(max-width:320px){
+            width: 35px;
+            padding: 10px;
+        }
+        @media(max-width:290px){
+            width: 30px;
+            padding: 7px;
+        }
     }
 }
