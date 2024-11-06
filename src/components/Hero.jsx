@@ -7,10 +7,10 @@ import rain from "../Assets/image/rain.png";
 import snow from "../Assets/image/snow.png";
 import wind from "../Assets/image/wind.png";
 import Search from './Search';
+
 const Hero = () => {
     const [wheatherData, setWheatherData] = useState(false);
-    const[searchValue,setSearchValue]=useState("Baku");
-
+    const [searchValue, setSearchValue] = useState("Baku");
     const allIcons = {
         "01d": clear,
         "01n": clear,
@@ -29,6 +29,8 @@ const Hero = () => {
     }
 
     const search = async (city) => {
+       
+
         try {
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.REACT_APP_APP_ID}`;
             const response = await fetch(url);
@@ -48,12 +50,12 @@ const Hero = () => {
     }
     useEffect(() => {
         search(searchValue);
-    }, [searchValue]); 
+    }, [searchValue]);
 
 
     return (
         <div className="hero">
-             <Search setSearchValue={setSearchValue} />
+            <Search setSearchValue={setSearchValue} />
             <div className='weather-top-content'>
                 <img src={wheatherData.icon} alt="clear" />
                 <p className='temprature'>{wheatherData.temprature}°C</p>
