@@ -11,6 +11,12 @@
         color: #626262;
         background-color: #ebfffc;
         font-size: 18px;
+        @media(max-width:370px){
+            padding: 18px;
+        }
+        @media(max-width:340px){
+            padding: 10px;
+        }
     }
     img{
         width: 50px;

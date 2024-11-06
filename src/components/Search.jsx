@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import search_icon from "../Assets/image/search.png";
 
 
-const Search = ({ setSearchValue  }) => {
+const Search = ({ setSearchValue }) => {
     const [searchInput, setSearchInput] = useState("");
 
     const handleSearch = () => {
-        setSearchValue(searchInput); 
+        setSearchValue(searchInput)
     }
 
     return (
